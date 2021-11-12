@@ -26,13 +26,36 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+.map creates a new array, primarily used to convert data. return is needed.
+-receive an array of objects with user data and only want to pull .name from each user, map would be a great option.
+
+.reduce returns a single value, usually used to add or multiply integers found in arrays.
+-array filled with user data regarding crypto balances. if you wanted to add up all users total crypto balances you could easily do that with reduce.
+
+.filter returns an array based on if condition, true values run code and populate new array, leaving the original unaffected. false values get left out of the new array.
+-array full of recipes and you use filter to create an array that has taken a user input lets say an ingredient like spinach. you could search each recipes ingredient list through object.recipeIngredients and only add the recipes into the new array that have spinach in the ingredient array.
+
 2. Explain the difference between a callback and a higher order function.
+
+A callback function is passed into another function as an argument, and a higher order function receives other functions.
 
 3. Explain what a closure is.
 
+When an inner function reaches outside its scope to grab a variable that was defined there.
+
 4. Describe the four principles of the 'this' keyword.
 
+.implicit binding - objects with methods. Look to the left of the dot and that is what .this is bound to.
+
+.explicit binding - we tell the function what this refers to by using either .call, .apply, or .bind. .call and .apply invoke the function only difference being .call passes arguments 1x1 and .apply passes them as an array. .bind accepts arguments 1x1, but does not invoke the function instead creating a function name to invoke later.
+
+.new binding - .this refers to the new object being constructed.
+
+window binding - we did not give .this its context. this is bad. global scope bad
+
 5. Why do we need super() in an extended class?
+
+to do what object.create and parent.call did!
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
